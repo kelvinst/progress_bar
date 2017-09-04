@@ -48,7 +48,7 @@ defmodule ProgressBar.Determinate do
   defp formatted_percent(true, number) do
     number
     |> Integer.to_string()
-    |> String.rjust(4)
+    |> String.pad_leading(4)
     |> Kernel.<>("%")
   end
 
