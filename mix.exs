@@ -7,10 +7,10 @@ defmodule ProgressBar.Mixfile do
       version: "1.6.1",
       elixir: "~> 1.0",
       description: "Command-line progress bars and spinners.",
-      package: package,
+      package: package(),
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      deps: deps,
+      deps: deps(),
     ]
   end
 
